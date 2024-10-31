@@ -30,9 +30,31 @@ const arr = [nombre, email, mensaje];
 const messageArr = ["Nombre", "Email", "Mensaje"];
 for(i = 0; i < arr.length; i++){
     if(arr[i].value == ""){
-        
+        swal({
+            title: `El campo ${messageArr[i]} no puede estar vacío`,
+            icon: "error",
+             })
+             return false;
     }
 }
+const emailValido = (email) => {
+return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)
+}
+if(!emailValido(email)){
+    swal({
+        title: `El campo ${messageArr[1]} no tiene el formato correcto`,
+        icon: "error",
+         })
+         return false;
+}
+swal({
+    title: `Datos enviados satisfactoriamente`,
+    icon: "success",
+     })
+     nombre.value = "";
+     email.value = "";
+     mensaje.value = "";
+     return true;
 }
 
 overlay()
