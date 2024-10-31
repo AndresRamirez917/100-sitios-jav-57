@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/scss/styles.css">
+    <link rel="stylesheet" media="screen and (max-width:1000px)" href="/scss/mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>GRID LANDING | Welcome</title>
+</head>
+<body>
+    <!-- mainheader -->
+    <header id="mainheader">
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html"><img src="/images/logo.png" alt="" class="logo"></a>
+                <ul>
+                    <li><a href="magna.html">magna</a></li>
+                    <li><a href="lorem.html">lorem</a></li>
+                    <li><a href="tempus.html">tempus</a></li>
+                    <li><a href="venenatis.html">venenatis</a></li>
+                    <li><a href="feugiat.html">feugiat</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- showcase -->
+    <section id="showcase">
+        <h1>This is a landing page to practice CSS Grid based on the Phantom Template</h1>
+        <p>Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod sit amet nisi euismod sed cursus arcu elementum ipsum arcu vivamus quis venenatis orci lorem ipsum et magna feugiat veroeros aliquam.</p>
+    </section>
+
+    <!-- cards -->
+    <section id="cards" class="grid">
+        <!-- <div class="grid-box grid-box-1">
+            <h4>magna</h4>
+             <div class="overlay overlay-1">
+                <p>Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod sit amet nisi euismod sed cursus arcu
+                    elementum ipsum arcu vivamus quis venenatis orci lorem ipsum et magna feugiat veroeros aliquam.</p>
+                <a href="magna.html" class="btn">learn more</a>
+            </div> 
+        </div>
+        <div class="grid-box grid-box-2">
+            <h4>lorem</h4>
+            <div class="overlay overlay-2">
+                <p>Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod sit amet nisi euismod sed cursus arcu
+                    elementum ipsum arcu vivamus quis venenatis orci lorem ipsum et magna feugiat veroeros aliquam.</p>
+                <a href="lorem.html" class="btn">learn more</a>
+            </div>
+        </div>
+        <div class="grid-box grid-box-3">
+            <h4>tempus</h4>
+            <div class="overlay overlay-3">
+                <p>Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod sit amet nisi euismod sed cursus arcu
+                    elementum ipsum arcu vivamus quis venenatis orci lorem ipsum et magna feugiat veroeros aliquam.</p>
+                <a href="tempus.html" class="btn">learn more</a>
+            </div>
+        </div>
+        <div class="grid-box grid-box-4">
+            <h4>venenatis</h4>
+            <div class="overlay overlay-4">
+                <p>Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod sit amet nisi euismod sed cursus arcu
+                    elementum ipsum arcu vivamus quis venenatis orci lorem ipsum et magna feugiat veroeros aliquam.</p>
+                <a href="venenatis.html" class="btn">learn more</a>
+            </div>
+        </div>
+        <div class="grid-box grid-box-5">
+            <h4>feugiat</h4>
+            <div class="overlay overlay-5">
+                <p>Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod sit amet nisi euismod sed cursus arcu
+                    elementum ipsum arcu vivamus quis venenatis orci lorem ipsum et magna feugiat veroeros aliquam.</p>
+                <a href="feugiat.html" class="btn">learn more</a>
+            </div>
+        </div> -->
+    </section>
+
+    <!-- contact -->
+    <section id="contact">
+        <div class="contact-row">
+            <div class="contact-form">
+                <h2>contact us</h2>
+                <form action="">
+                    <div class="contact-form-flex">
+                        <div class="form-group">
+                            <label for="">Nombre</label>
+                            <input id="nombre" type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Email</label>
+                            <input id="email" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="" id="mensaje" cols="30" rows="10" class="form-control"></textarea>
+                    </div>  
+                    <button id="btn-validar" class="button-2">submit</button> 
+                </form>
+            </div>
+            <div class="contact-social">
+                <h2>follow us</h2>
+                <img src="/images/bxl-facebook-circle.svg" alt="">
+                <img src="/images/bxl-instagram.svg" alt="">
+                <img src="/images/bxl-twitter.svg" alt="">
+                <img src="/images/bxl-youtube.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="footer">
+        <a href="https://twitter.com/AndresRamirez?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @AndresRamirez</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>
